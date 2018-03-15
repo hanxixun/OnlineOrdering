@@ -1,0 +1,28 @@
+.carousel-inner img{
+    margin:0 auto;
+}
+.jumbotron{
+    padding:0;
+    margin:0;
+    height:100%;overflow:hidden;
+}
+.container{
+    padding:0;
+    height:100%;overflow:hidden;
+}
+html,body{
+    height:100%;overflow:hidden;
+}
+.item{
+    height:100%;overflow:hidden;
+}
+#myCarousel{
+    height:100%;overflow:hidden;
+}
+.carousel-inner{
+    height:100%;overflow:hidden;
+}
+img{
+    width:100%;
+    height:100%;
+}

@@ -1,0 +1,40 @@
+.checked{
+    background:0;
+}
+.input-group-addon{
+    background:0;
+    border:0;
+}
+a:hover{
+    text-decoration: none;
+}
+.btnbtn-lg{
+    color:black;
+}
+.bg{
+    background:#F5F5F5;
+    margin-top:3px;
+}
+.glyphicon glyphicon-remove{
+    position: relative;
+    right:20;
+}
+.container{
+    padding-top:10px;
+}
+#top{
+    height:50px;
+    width:720px;
+    background:#1296db;
+    text-align:center;
+    vertical-align:middle;
+    display:table-cell;
+}
+#bottom{
+    height:50px;
+    background:#ffffff;
+}
+body::-webkit-scrollbar{
+    width:0;
+    height:0;
+}

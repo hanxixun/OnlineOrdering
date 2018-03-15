@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+     <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	 <title></title>
+	 <link rel="stylesheet" href="css/bootstrap.min.css">
+	 <link href="css/style3.css" rel="stylesheet" type="text/css">
+</head>
+<body style="padding-bottom:54px;">
+		<nav class="navbar navbar-fixed-top">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+				<div id="top"><font size="5px">订单</font>
+				</div>
+			</div>
+		  </div>
+		</nav>
+		<nav class="navbar navbar-fixed-bottom">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+				<div class="input-group bg" id="bottom">
+				   <div class="row" style="height:50px;">
+						 <div class="col-xs-8">
+						  <div class="input-group-addon" style="height:50px;">
+							<input class="checked" type="checkbox" onclick="change2(this)" checked="false" aria-label="...">&nbsp;&nbsp;&nbsp;
+							<font size="3px">全选</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<font size="3px">合计：</font>
+							<i class="glyphicon glyphicon-yen" style="color:red;"></i>
+							<font id="price" size="3px" color="red">0</font>
+						  </div>
+						 </div>
+						 <div class="col-xs-4" style="padding:0px;height:50px;">
+						  <button type="button" class="btn btn-danger btn-block" onclick="send()" style="padding:0px;border:0px;height:50px;">结算</button>
+						 </div>
+					  
+				    </div>
+			    </div>
+		    </div>
+		  </div>
+		</nav>
+        <div class="container" style="padding-top:50px;">
+		    <div class="row">
+			    <div class="col-xs-7">
+				    <div class="input-group">
+					 <span class="input-group-addon">
+				          <input class="checked dian" type="checkbox" onclick="change1(this)" checked="false" aria-label="dian">
+			         </span>
+				     <a href="#" class="btnbtn-lg">老四川&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-chevron-right"></i></a>
+				    </div>
+				</div>
+				<div class="col-xs-5">
+				     <a href="#" class="btnbtn-lg">店铺活动</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+					 <a href="#" class="btnbtn-lg">领劵</a>
+				</div>
+			</div>
+			<div class="input-group bg">
+			  <span class="input-group-addon">
+				<input class="checked" type="checkbox" onclick="change3(this)" checked="false" aria-label="...">
+			  </span>
+			  <div class="media">
+			    <div class="media-left media-middle">
+				  <a href="#">
+				    <img class="media-object" src="img/e.jpg" alt="...">
+				  </a>
+			    </div>
+			    <div class="media-body">
+				  <div class="row">
+				     <div class="col-xs-12">
+					    <h4 class="media-heading">鱼香肉丝</h4>
+					 </div>
+					 <div class="col-xs-12">
+					    <h5 class="media-heading">菜系：川菜</h5>
+					 </div>
+                     <div class="col-xs-9">					 
+					    <h5 class="media-heading"><i class="glyphicon glyphicon-yen"></i>130</h5>
+			         </div>
+					 <div class="col-xs-3">
+					    <h5 class="media-heading"><i class="glyphicon glyphicon-remove"></i>1</h5>
+					 </div>
+				  </div>
+				  
+				</div>
+			  </div>
+			</div>
+			<div class="input-group bg">
+			  <span class="input-group-addon">
+				<input class="checked" type="checkbox" onclick="change3(this)" checked="false" aria-label="...">
+			  </span>
+			  <div class="media">
+			    <div class="media-left media-middle">
+				  <a href="#">
+				    <img class="media-object" src="img/e.jpg" alt="...">
+				  </a>
+			    </div>
+			    <div class="media-body">
+				  <div class="row">
+				     <div class="col-xs-12">
+					    <h4 class="media-heading">辣子鸡丁</h4>
+					 </div>
+					 <div class="col-xs-12">
+					    <h5 class="media-heading">菜系：川菜</h5>
+					 </div>
+					 <div class="col-xs-12">
+					    <h5 class="media-heading" style="color:red">已降<i class="glyphicon glyphicon-yen"></i>100</h5>
+					 </div>
+                     <div class="col-xs-9">					 
+					    <h5 class="media-heading">
+					        <i class="glyphicon glyphicon-yen"></i>130&nbsp;
+						    <strike><i class="glyphicon glyphicon-yen"></i>230</strike>
+					    </h5>
+			         </div>
+					 <div class="col-xs-3">
+					    <h5 class="media-heading"><i class="glyphicon glyphicon-remove"></i>1</h5>
+					 </div>
+				  </div>
+				  
+				</div>
+			  </div>
+			</div>
+	    </div>
+        <div class="container">
+		    <div class="row">
+			    <div class="col-xs-7">
+				    <div class="input-group">
+					 <span class="input-group-addon">
+				          <input class="checked dian" type="checkbox" onclick="change1(this)" checked="false" aria-label="...">
+			         </span>
+				     <a href="#" class="btnbtn-lg">阳泉面馆&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-chevron-right"></i></a>
+				    </div>
+				</div>
+				<div class="col-xs-5">
+				     <a href="#" class="btnbtn-lg">店铺活动</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+					 <a href="#" class="btnbtn-lg">领劵</a>
+				</div>
+			</div>
+			<div class="input-group bg">
+			  <span class="input-group-addon">
+				<input class="checked" type="checkbox" onclick="change3(this)" checked="false" aria-label="...">
+			  </span>
+			  <div class="media">
+			    <div class="media-left media-middle">
+				  <a href="#">
+				    <img class="media-object" src="img/e.jpg" alt="...">
+				  </a>
+			    </div>
+			    <div class="media-body">
+				  <div class="row">
+				     <div class="col-xs-12">
+					    <h4 class="media-heading">鱼香肉丝</h4>
+					 </div>
+					 <div class="col-xs-12">
+					    <h5 class="media-heading">菜系：川菜</h5>
+					 </div>
+                     <div class="col-xs-9">					 
+					    <h5 class="media-heading"><i class="glyphicon glyphicon-yen"></i>130</h5>
+			         </div>
+					 <div class="col-xs-3">
+					    <h5 class="media-heading"><i class="glyphicon glyphicon-remove"></i>1</h5>
+					 </div>
+				  </div>
+				  
+				</div>
+			  </div>
+			</div>
+			<div class="input-group bg">
+			  <span class="input-group-addon">
+				<input class="checked" type="checkbox" onclick="change3(this)" checked="false" aria-label="...">
+			  </span>
+			  <div class="media">
+			    <div class="media-left media-middle">
+				  <a href="#">
+				    <img class="media-object" src="img/e.jpg" alt="...">
+				  </a>
+			    </div>
+			    <div class="media-body">
+				  <div class="row">
+				     <div class="col-xs-12">
+					    <h4 class="media-heading">辣子鸡丁</h4>
+					 </div>
+					 <div class="col-xs-12">
+					    <h5 class="media-heading">菜系：川菜</h5>
+					 </div>
+					 <div class="col-xs-12">
+					    <h5 class="media-heading" style="color:red">已降<i class="glyphicon glyphicon-yen"></i>100</h5>
+					 </div>
+                     <div class="col-xs-9">					 
+					    <h5 class="media-heading">
+					        <i class="glyphicon glyphicon-yen"></i>130&nbsp;
+						    <strike><i class="glyphicon glyphicon-yen"></i>230</strike>
+					    </h5>
+			         </div>
+					 <div class="col-xs-3">
+					    <h5 class="media-heading"><i class="glyphicon glyphicon-remove"></i>1</h5>
+					 </div>
+				  </div>
+				  
+				</div>
+			  </div>
+			</div>
+			<div class="input-group bg">
+			  <span class="input-group-addon">
+				<input class="checked" type="checkbox" onclick="change3(this)" checked="false" aria-label="...">
+			  </span>
+			  <div class="media">
+			    <div class="media-left media-middle">
+				  <a href="#">
+				    <img class="media-object" src="img/e.jpg" alt="...">
+				  </a>
+			    </div>
+			    <div class="media-body">
+				  <div class="row">
+				     <div class="col-xs-12">
+					    <h4 class="media-heading">辣子鸡丁</h4>
+					 </div>
+					 <div class="col-xs-12">
+					    <h5 class="media-heading">菜系：川菜</h5>
+					 </div>
+					 <div class="col-xs-12">
+					    <h5 class="media-heading" style="color:red">已降<i class="glyphicon glyphicon-yen"></i>100</h5>
+					 </div>
+                     <div class="col-xs-9">					 
+					    <h5 class="media-heading">
+					        <i class="glyphicon glyphicon-yen"></i>130&nbsp;
+						    <strike><i class="glyphicon glyphicon-yen"></i>230</strike>
+					    </h5>
+			         </div>
+					 <div class="col-xs-3">
+					    <h5 class="media-heading"><i class="glyphicon glyphicon-remove"></i>1</h5>
+					 </div>
+				  </div>
+				  
+				</div>
+			  </div>
+			</div>
+	    </div>
+		<div class="container">
+		    <div class="row">
+			    <div class="col-xs-7">
+				    <div class="input-group">
+					 <span class="input-group-addon">
+				          <input class="checked dian" type="checkbox" onclick="change1(this)" checked="false" aria-label="...">
+			         </span>
+				     <a href="#" class="btnbtn-lg">火锅店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-chevron-right"></i></a>
+				    </div>
+				</div>
+				<div class="col-xs-5">
+				     <a href="#" class="btnbtn-lg">店铺活动</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+					 <a href="#" class="btnbtn-lg">领劵</a>
+				</div>
+			</div>
+			<div class="input-group bg">
+			  <span class="input-group-addon">
+				<input class="checked" type="checkbox" onclick="change3(this)" checked="false" aria-label="...">
+			  </span>
+			  <div class="media">
+			    <div class="media-left media-middle">
+				  <a href="#">
+				    <img class="media-object" src="img/e.jpg" alt="...">
+				  </a>
+			    </div>
+			    <div class="media-body">
+				  <div class="row">
+				     <div class="col-xs-12">
+					    <h4 class="media-heading">鱼香肉丝</h4>
+					 </div>
+					 <div class="col-xs-12">
+					    <h5 class="media-heading">菜系：川菜</h5>
+					 </div>
+                     <div class="col-xs-9">					 
+					    <h5 class="media-heading"><i class="glyphicon glyphicon-yen"></i>130</h5>
+			         </div>
+					 <div class="col-xs-3">
+					    <h5 class="media-heading"><i class="glyphicon glyphicon-remove"></i>1</h5>
+					 </div>
+				  </div>
+				  
+				</div>
+			  </div>
+			</div>
+			<div class="input-group bg">
+			  <span class="input-group-addon">
+				<input class="checked" type="checkbox" onclick="change3(this)" checked="false" aria-label="...">
+			  </span>
+			  <div class="media">
+			    <div class="media-left media-middle">
+				  <a href="#">
+				    <img class="media-object" src="img/e.jpg" alt="...">
+				  </a>
+			    </div>
+			    <div class="media-body">
+				  <div class="row">
+				     <div class="col-xs-12">
+					    <h4 class="media-heading">辣子鸡丁</h4>
+					 </div>
+					 <div class="col-xs-12">
+					    <h5 class="media-heading">菜系：川菜</h5>
+					 </div>
+					 <div class="col-xs-12">
+					    <h5 class="media-heading" style="color:red">已降<i class="glyphicon glyphicon-yen"></i>100</h5>
+					 </div>
+                     <div class="col-xs-9">					 
+					    <h5 class="media-heading">
+					        <i class="glyphicon glyphicon-yen"></i>130&nbsp;
+						    <strike><i class="glyphicon glyphicon-yen"></i>230</strike>
+					    </h5>
+			         </div>
+					 <div class="col-xs-3">
+					    <h5 class="media-heading"><i class="glyphicon glyphicon-remove"></i>1</h5>
+					 </div>
+				  </div>
+				  
+				</div>
+			  </div>
+			</div>
+	    </div>
+	 <script src="js/jquery.min.js"></script>
+	 <script src="js/bootstrap.min.js"></script>
+	 <script type="text/javascript" src="js/toucher.js"></script>
+	 <script type="text/javascript" src="js/toucher2.js"></script>
+</body>
+</html>

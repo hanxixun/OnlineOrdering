@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="tab_name_color">#515151</color>
+    <color name="me_login_text">#dddddd</color>
+    <color name="me_backgroud">#dddddd</color>
+    <color name="me_layout_backgroud">#ffffff</color>
+    <color name="account_line">#dddddd</color>
+</resources>

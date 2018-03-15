@@ -1,0 +1,24 @@
+.jumbotron{
+   padding:0;
+   margin:0;
+}
+.container{
+   padding:0;
+   margin:0;
+}
+html,body{
+   height:100%;
+}
+img{
+   width:100%;
+   height:100%;
+}
+#carousel-example-generic{
+   height:100%;
+}
+.btn{
+   border:0;
+   height:50px;
+   width:150px;
+}
+
